@@ -6,6 +6,7 @@
 #include "texture-quad-vertexarray.h"
 #include "texture-quad-interleaved.h"
 #include "arwing.h"
+#include "semi-circle-interleaved.h"
 
 using namespace std;
 
@@ -112,12 +113,14 @@ void renderScene()
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	//drawSemiCircleImmediate();
-	drawSemiCircleVertexArray();
+	//drawSemiCircleVertexArray();
 	//drawTexturedQuadImmediate(playerTexture);
 	//drawTextureQuadVertexArray(playerTexture);
 	//drawTextureQuadInterleaved(playerTexture);
 	//drawArwingImmediate();
 	//drawArwingVertexArray();
+
+	renderSemiCircleInterleaved();
 }
 
 
